@@ -118,3 +118,30 @@
 
 //     return 0;
 // }
+
+#include <iostream>
+#include <string>
+using namespace std;
+class Book {
+    private: 
+    int num;
+    public:
+    void getNum(){
+        num=5;
+    }
+    void show(){
+        cout<<num<<endl;
+    }
+};
+int main(){
+    Book b1;
+    b1.getNum();
+    Book b2(b1);
+    Book b3(b1);
+    
+    b1.show();
+    b2.show();
+    b3.show();
+
+
+}
